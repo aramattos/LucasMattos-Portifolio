@@ -209,6 +209,76 @@ section {
 .sideMenuShow {
     left: 0;
 }
+.visuallyHidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0);
+    overflow: hidden;
+}
+
+.srOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.menuButton {
+    cursor: pointer;
+    position: fixed;
+    height: 30px;
+    width: 35px;
+    padding: 10px;
+    top: 35px;
+    right: 25px;
+    z-index: 20;
+    display: none;
+}
+
+.menuButton:focus {
+    border: 2px solid #8444df;
+}
+
+.menuButton .linesContainer {
+    position: relative;
+}
+
+.menuButton .linesContainer span,
+.menuButton .linesContainer span::before,
+.menuButton .linesContainer span::after {
+    border-radius: 5px;
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+.menuButton .linesContainer span {
+    top: 3px;
+    left: -6px;
+}
+
+.menuButton .linesContainer span:before {
+    top: -10px;
+}
+
+.menuButton .linesContainer span:after {
+    bottom: -10px;
+}
 
 header {
     height: 100vh;

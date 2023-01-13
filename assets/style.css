@@ -247,10 +247,6 @@ section {
     display: none;
 }
 
-.menuButton:focus {
-    border: 2px solid #8444df;
-}
-
 .menuButton .linesContainer {
     position: relative;
 }

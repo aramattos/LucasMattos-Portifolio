@@ -75,3 +75,5 @@ index.init = function() {
 $(function() {
   index.init();
 })
+
+//final

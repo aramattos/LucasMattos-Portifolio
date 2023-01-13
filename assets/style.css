@@ -1,0 +1,633 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+article,
+aside,
+details,
+footer,
+header,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 125%;
+    background: #f7f7f7;
+    display: flex;
+    color: #333;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.outContainer {
+    width: calc(100% - 90px);
+    margin-left: 90px;
+    overflow: hidden;
+}
+
+.innerContainer {
+    padding: 0 33px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.sectionContainer {
+    background-color: white;
+    border-radius: 50px;
+    padding: 48px;
+}
+
+.sectionHead {
+    margin-bottom: 50px;
+}
+
+.sectionHead span {
+    padding-bottom: 20px;
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 80px;
+    letter-spacing: 1px;
+}
+
+.sectionHead span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 50px;
+    height: 1px;
+    background: #333;
+}
+
+.sectionHead h2 {
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+}
+
+.techStack {
+    color: #8444df;
+}
+
+.sideMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 105px;
+    height: 100vh;
+    background-color: #8444df;
+    position: fixed;
+    color: white;
+    transition: all 0.3s ease-in;
+    z-index: 10;
+}
+
+.sideMenu p {
+    text-align: center;
+    padding: 30px 15px;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    background-color: #773dc8;
+}
+
+.sideMenu nav {
+    padding: 26px;
+}
+
+.sideMenu nav a {
+    padding: 13px 17px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    transition-duration: 0.25s;
+    border-radius: 6px;
+    width: 80%;
+    position: relative;
+}
+
+.sideMenu nav a span {
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    transition-duration: 0.2s;
+    position: absolute;
+    left: 55px;
+    top: 18px;
+    transition-delay: 0.1s;
+}
+
+.sideMenu nav a:hover,
+.sideMenu nav a:focus {
+    background-color: #9D69E5;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+}
+
+.sideMenu .scrollDown {
+    height: 50px;
+    position: relative;
+    left: 35px;
+}
+
+.sideMenu .scrollDown .fa-arrow-down-long {
+    line-height: 1.2;
+    font-size: 2rem;
+}
+
+.sideMenu .scrollDown .scrollDownText {
+    font-size: 0.75rem;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-weight: 300;
+}
+
+.hoverMenu {
+    width: 220px;
+}
+
+.menuShow {
+    display: block;
+}
+
+.menuHide {
+    display: none;
+}
+
+.sideMenuHide {
+    left: -300px;
+}
+
+.sideMenuShow {
+    left: 0;
+}
+
+header {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header .myImageContainer {
+    
+    flex: 0 0 50%;
+    padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+header .myImageContainer img {
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 350px;
+    height: 350px;
+    box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
+}
+
+header .DescriptionContainer {
+    
+    flex: 0 0 50%;
+    padding: 0 15px;
+    width: 100%;
+}
+
+header .DescriptionContainer .greeting {
+    letter-spacing: 1px;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+header .DescriptionContainer h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin: 24px 0;
+}
+
+header .DescriptionContainer h1 span {
+    color: #8444df;
+}
+
+header .DescriptionContainer .SmallBio {
+    letter-spacing: 1px;
+    color: #5F6F81;
+    font-size: 1rem;
+    min-width: 250px;
+    line-height: 1.4;
+}
+
+header .DescriptionContainer .SmallBio span {
+    color: #8444df;
+    font-size: 1.1rem;
+}
+
+header .DescriptionContainer .socialResume {
+    
+    display: flex;
+    margin-top: 30px;
+}
+
+header .DescriptionContainer .socialResume .resumeLink {
+    background-color: #8444df;
+    padding: 15px 35px;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    display: inline-block;
+    transition: all 0.3s ease-in;
+}
+
+header .DescriptionContainer .socialResume .resumeLink:hover {
+    
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+}
+
+header .DescriptionContainer .socialResume .resumeLink:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.socialList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 50px;
+}
+
+.socialList li {
+    margin: 0 10px;
+}
+
+.socialList li a {
+    padding: 9px 10px;
+    background-color: white;
+    border-radius: 6px;
+    color: #8444df;
+    border: 1px solid #eee;
+    box-shadow: 0px 4px 6px rgba(134, 151, 168, 0.1);
+    transition: all 0.3s ease-in;
+    display: inline-block;
+}
+
+.socialList li a:hover {
+    
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+.socialList li a:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.aboutContainer p {
+    line-height: 1.5;
+}
+
+.aboutContainer p span {
+    color: #8444df;
+}
+
+.skillsContainer {
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+.skillsGrid li {
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    width: 80px;
+    transition: all 0.3s ease-in;
+    box-shadow: 0px 4px 8px rgba(134, 151, 168, 0.1);
+    border: 1px solid #eee;
+}
+
+.skillsGrid li p {
+    margin-top: 10px;
+}
+
+.skillsGrid li img {
+    width: 35px;
+    height: 35px;
+}
+
+.workBox {
+    display: flex;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 14px 28px rgba(134, 151, 168, 0.08);
+    transition: all 0.3s ease-in;
+    border: 1px solid #eee;
+}
+
+.workBox:first-child {
+    margin-top: 0;
+}
+
+.workBox .workImageContainer {
+
+    flex: 0 0 350px;
+    border-radius: 10px;
+    height: auto;
+}
+
+.workBox .workImageContainer img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.workBox .workDescribeContainer {
+
+    flex: 0 1 calc(100% - 350px);
+    margin-left: 25px;
+}
+
+.workBox .workDescribeContainer h3 {
+    letter-spacing: 1px;
+}
+
+.workBox .workDescribeContainer ul {
+    list-style: disc inside;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.workBox .workDescribeContainer ul li:not(:first-child) {
+    margin-top: 10px;
+}
+
+.workBox .workDescribeContainer p {
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.workBox .workDescribeContainer h4 {
+    font-size: 1rem;
+    margin-top: 7px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.workBox .workDescribeContainer h4 span {
+    color: #8444df;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.workBox .workDescribeContainer .workLinks {
+    margin-top: 50px;
+}
+
+.workBox .workDescribeContainer .workLinks a {
+    font-size: 1.1rem;
+    margin-right: 20px;
+    color: #8444df;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.workBox .workDescribeContainer .workLinks a:focus {
+    border: 2px solid #8444df;
+}
+
+footer {
+    padding: 20px;
+    background-color: white;
+}
+
+footer p {
+    width: 200px;
+    margin: 0 auto;
+    color: #333;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+/**********************/
+/*   MIN WIDTH 991PX  */
+/**********************/
+@media (min-width: 991px) {
+    .navItemName {
+        display: none;
+    }
+
+    .sideMenu:hover {
+        width: 220px;
+    }
+
+    .sideMenu:hover .navItemName {
+        display: block;
+    }
+}
+
+/**********************/
+/*   MAX WIDTH 900PX  */
+/**********************/
+@media (max-width: 990px) {
+    .outContainer {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .sideMenu {
+        width: 220px;
+        justify-content: flex-start;
+    }
+
+    .sideMenu nav {
+        margin-top: 40px;
+    }
+
+    .menuButton {
+        display: block;
+    }
+
+    header {
+        display: block;
+        padding: 80px 0;
+        height: auto;
+    }
+
+    header .DescriptionContainer {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    header .DescriptionContainer .socialResume {
+
+     justify-content: center;
+    }
+
+    .socialList {
+     margin-left: 10px;
+    }
+}
+
+/**********************/
+/*   MIN WIDTH 768PX  */
+/**********************/
+@media (min-width: 768px) {
+    .skillsGrid li:hover {
+
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+    }
+
+    .workBox:hover {
+
+        box-shadow: 5px 14px 28px rgba(134, 151, 168, 0.2);
+    }
+
+    .flexContainer .typeBox:hover {
+
+        box-shadow: 0px 14px 28px rgba(134, 151, 168, 0.08);
+    }
+}
+
+/**********************/
+/*   MAX WIDTH 767PX  */
+/**********************/
+@media (max-width: 767px) {
+    .innerContainer {
+        padding: 0 15px;
+    }
+
+    header .myImageContainer img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .sectionContainer {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .aboutContainer {
+        line-height: 1.3;
+        font-size: 1rem;
+    }
+
+    .workBox {
+        display: block;
+        padding: 0;
+    }
+
+    .workBox .workImageContainer {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .workBox .workDescribeContainer {
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .workBox .workDescribeContainer .workLinks {
+        margin-top: 25px;
+    }
+
+    .skillsGrid {
+        row-gap: 15px;
+
+        column-gap: 15px;
+    }
+
+}
+
+/**********************/
+/*   MAX WIDTH 400PX  */
+/**********************/
+@media (max-width: 400px) {
+    header {
+        padding: 40px 0;
+    }
+
+    header .DescriptionContainer .socialResume {
+        display: block;
+    }
+
+    header .myImageContainer img {
+
+        box-shadow: 12px 0 #d9c8f1;
+    }
+
+    .socialList {
+
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    
+}

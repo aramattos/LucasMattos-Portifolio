@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Front End Developer passionate about JS">
+    <title>Lucas Mattos</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,400&display=swap">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./fonts/webfonts/all.css">
+    <link rel="stylesheet" href="">
+    <link rel="icon" href="/assets/images/icons8-engrenagem-80.png">
+
+</head>
+
+<body>
+    <!-- Mobile menu button -->
+  <div id="home" class="visuallyHidden"></div>
+  <div class="menuButton" id="menuButton" tabindex=0>
+    <div class="linesContainer">
+      <span></span>
+    </div>
+  </div>
+    <!-- Side menu -->
+    <aside class="sideMenu sideMenuShow" id="sideMenu">
+        <p class="Logo">Lm</p>
+        <nav>
+            <ul class="navBar">
+                <li class="homeNav"> <a href="#home" class="navItem">
+                        <i class="fa-solid fa-house" id="home"></i>
+                        <span class="navItemName">HOME</span>
+                    </a></li>
+                <li class="aboutNav">
+                    <a href="#about">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="navItemName">ABOUT</span>
+                    </a>
+                </li>
+                <li class="skillsNav">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span class="navItemName">SKILLS</span>
+                    </a>
+                </li>
+                <li class="worksNav">
+                    <a href="#works">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span class="navItemName">WORKS</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="scrollDown" id="scrollDown">
+            <i class="fa-solid fa-arrow-down-long"></i>
+            <span class="navItemName scrollDownText">Scroll Down</span>
+        </div>
+    </aside>
+    <!-- Containers -->
+    <div class="outContainer">
+
+        <div class="innerContainer">
+            <!-- Header-->
+            <header>
+                <div class="myImageContainer">
+                    <img src="./assets/images/perfil_eu.jpg" alt="Uma imagem de Lucas Mattos.">
+                </div>
+                <div class="DescriptionContainer">
+                    <p class="greeting">Olá! Eu sou</p>
+                    <h1><span>LUCAS</span> MATTOS</h1>
+                    <p class="SmallBio"> Um <span>Desenvolvedor Front-End</span> apaixonado por elaborar projetos úteis
+                        e práticos</p>
+                    <div class="socialResume">
+                        <ul class="socialList">
+                            <li>
+                                <a href="https://www.linkedin.com/in/lucas-araujo-de-mattos-103569250/" target="_blank">
+                                    <i class="fa-brands fa-linkedin"
+                                        aria-label="Link para página do Linkedin de Lucas Mattos."></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/aramattos" target="_blank">
+                                    <i class="fa-brands fa-github"
+                                        aria-label="Link para página do GitHub de Lucas Mattos."></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- Inicio do Main-->
+            <main>
+                <!-- Sessão sobre-->
+                <section class="aboutSection" id="about">
+                    <div class="sectionHead">
+                        <span>MAIS INFOS</span>
+                        <h2>SOBRE MIM</h2>
+                    </div>
+                    <article class="aboutContainer sectionContainer">
+                        <p> Eu sou um Desenvolvedor Front-End com experiência em Javascript com bastante conhecimento e
+                            posso afirmar que tenho uma base sólida de conhecimento e facilidade em construções de
+                            soluções complexas.
+                            Apaixonado por codar e resolver problemas por meio de código. Estou animado para trabalhar
+                            ao lado de outros programadores
+                            incríveis e aprender muito mais.</p>
+                    </article>
+                </section>
+                <!-- Sessão de skills-->
+                <section class="skillsSection" id="skills">
+                    <div class="sectionHead">
+                        <span>VEJA MINHAS</span>
+                        <h2>SKILLS</h2>
+                    </div>
+                    <div class="skillsContainer sectionContainer">
+                        <ul class="skillsGrid">
+                            <li>
+                                <div class="itemContainer">
+                                    <img src="./assets/images/HTML.svg">
+                                    <p>HTML</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itemContainer">
+                                    <img src="./assets/images/css.svg">
+                                    <p>CSS</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itemContainer">
+                                    <img src="./assets/images/javascript.svg">
+                                    <p>Javascript</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itemContainer">
+                                    <img src="./assets/images/jquery.svg">
+                                    <p>JQuery</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itemContainer">
+                                    <img src="./assets/images/react.svg">
+                                    <p>React</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itemContainer">
+                                    <img src="./assets/images/api.svg">
+                                    <p>REST API</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itemContainer">
+                                    <img src="./assets/images/vscode.svg">
+                                    <p>VS CODE</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itemContainer">
+                                    <img src="./assets/images/microsoftWindows.svg">
+                                    <p>Windows</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- PROJETOS-->
+                <section class="worksSection" id="works">
+                    <div class="sectionHead">
+                        <span>DÊ UMA OLHADA NOS MEUS</span>
+                        <h2>PROJETOS</h2>
+                    </div>
+                    <div class="worksContainer sectionContainer">
+                        <article class="workBox">
+                            <div class="workImageContainer">
+                                <img src="./assets/images/pokedex.png" alt="Pokédex">
+                            </div>
+                            <div class="workDescribeContainer">
+                                <h3>Pokédex</h3>
+                                <h4> Tecnologias usadas: <span class="techStack">Javascript</span>, 
+                                    <span class="techStack">HTML</span>, <span class="techStack">CSS</span>, <span class="techStack">REST API</span></h4>
+                                    <ul>
+                                        <li>Ótima para os mais diversos tipos de treinadores Pokémons</li>
+                                        <li>Versão 20.22 da Pokédex Master Version</li>
+                                        <li>Sucesso entre treinadores do Sul, Pokédex Master Version chega ao norte do país ainda esse ano</li>
+                                    </ul>
+                                    <div class="workLinks">
+                                        <a href="" class="liveLink" target="_blank">Live</a>
+                                        <a href="https://github.com/aramattos/Pokedex" class="repoLink" target="_blank">Repo</a>
+                                    </div>
+                            </div>
+                        </article>
+
+                        <article class="workBox">
+                            <div class="workImageContainer">
+                                <img src="./assets/images/memory.png" alt="Jogo da memória">
+                            </div>
+                            <div class="workDescribeContainer">
+                                <h3>Jogo da Memória</h3>
+                                <h4> Tecnologias usadas: <span class="techStack">Javascript</span>, <span class="techStack">HTML</span>,
+                                <span class="techStack"> CSS</span></h4>
+                                <ul>
+                                    <li>Ótimo exercício para mente, ajudando no foco e produzindo dopamina em seu corpo</li>
+                                    <li>Sucesso nas casas de repouso em todos país</li>
+                                </ul>
+                                <div class="workLinks">
+                                    <a href="" class="liveLink" target="_blank">Live</a>
+                                    <a href="" class="repoLink" target="_blank">Repo</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="workBox">
+                            <div class="workImageContainer">
+                                <img src="/assets/images/calc.png" alt="Calculadora de IMC">
+                            </div>
+                            <div class="workDescribeContainer">
+                                <h3>Calculadora de IMC</h3>
+                                <h4> Tecnologias usadas: <span class="techStack">Javascript</span>, <span class="techStack">HTML</span>,
+                                <span class="techStack"> CSS</span></h4>
+                                <ul>
+                                    <li>Nove a cada dez nutricionistas usam e recomendam</li>
+                                    <li>Fácil e intuitivo, esta aplicação foi criada para todos os públicos</li>
+                                </ul>
+                                <div class="workLinks">
+                                    <a href="" class="liveLink" target="_blank">Live</a>
+                                    <a href="" class="repoLink" target="_blank">Repo</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                
+            </main><!-- final do Main-->
+        </div> <!-- final do innerContainer-->
+        <footer>
+            <p>&copy; Lucas Mattos 2022</p>
+        </footer>
+    </div> <!-- final do outContainer-->
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="/assets/index.js"></script>
+</body>
+
+</html>
